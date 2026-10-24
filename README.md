@@ -1,4 +1,4 @@
-# US Swap Spread Strategies
+# US Swap Spread Strategy
 
 This project tests a trading rule for US Treasury-swap spreads. A rolling regression on cross-currency basis and MOVE provides a fitted spread, and the strategy trades large deviations from that fitted value.
 
