@@ -26,18 +26,18 @@ A long spread holds a Treasury and pays fixed on a swap, with equal entry DV01 o
 
 ## Results
 
-The table shows cumulative returns at 1x leverage. Each R column covers its own period above, so these are different investment horizons. The first and final calendar years are partial.
+The table shows cumulative returns at 10x leverage. Each R column covers its own period above, so these are different investment horizons. The first and final calendar years are partial.
 
 | Spread and basis | R1 gross | R1 after costs | R2 gross | R2 after costs | R3 gross | R3 after costs |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 10Y / GBP2Y | 2.17% | 1.39% | 0.89% | 0.42% | 1.47% | 1.24% |
-| 10Y / GBP5Y | 2.38% | 1.60% | 1.40% | 1.00% | 0.83% | 0.57% |
-| 10Y / EUR2Y | 2.15% | 1.12% | 2.16% | 1.72% | 2.17% | 1.86% |
-| 10Y / EUR5Y | 1.21% | 0.10% | 2.03% | 1.56% | 0.94% | 0.67% |
-| 30Y / GBP2Y | 3.10% | 1.41% | 3.94% | 3.21% | 6.64% | 6.01% |
-| 30Y / GBP5Y | 1.30% | -0.43% | 4.11% | 3.14% | 4.06% | 3.27% |
-| 30Y / EUR2Y | 2.88% | 1.03% | 5.35% | 4.54% | 5.70% | 4.99% |
-| 30Y / EUR5Y | -0.19% | -1.94% | 4.22% | 3.41% | 5.06% | 4.44% |
+| 10Y / GBP2Y | 22.16% | 13.20% | 8.48% | 3.52% | 15.34% | 12.86% |
+| 10Y / GBP5Y | 24.20% | 15.11% | 13.93% | 9.64% | 8.09% | 5.32% |
+| 10Y / EUR2Y | 21.23% | 9.56% | 22.23% | 17.17% | 22.42% | 18.85% |
+| 10Y / EUR5Y | 10.48% | -1.06% | 20.52% | 15.06% | 8.84% | 6.05% |
+| 30Y / GBP2Y | 18.09% | 0.02% | 41.45% | 32.22% | 78.19% | 68.42% |
+| 30Y / GBP5Y | -5.68% | -21.00% | 44.96% | 32.22% | 38.49% | 28.52% |
+| 30Y / EUR2Y | 18.64% | -1.14% | 62.54% | 50.83% | 62.42% | 52.17% |
+| 30Y / EUR5Y | -13.01% | -27.31% | 44.54% | 33.98% | 49.42% | 41.06% |
 
 The cost-adjusted version charges 0.5 bp for a completed round trip and funds a 1% Treasury repo haircut at SOFR + 5 bp. Baseline carry already includes Treasury funding at SOFR, so the haircut calculation adds the incremental funding cost. Swap margin costs are assessed separately.
 
