@@ -26,18 +26,18 @@ A long spread holds a Treasury and pays fixed on a swap, with equal entry DV01 o
 
 ## Results
 
-The table shows cumulative returns at 10x leverage. Each R column covers its own period above, so these are different investment horizons. The first and final calendar years are partial.
+The table shows **annualized returns (CAGR) at 10x leverage**. Each R column uses its own evaluation period above. CAGR is calculated as `(final capital / initial capital)^(365.25 / elapsed calendar days) - 1`.
 
 | Spread and basis | R1 gross | R1 after costs | R2 gross | R2 after costs | R3 gross | R3 after costs |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 10Y / GBP2Y | 22.16% | 13.20% | 8.48% | 3.52% | 15.34% | 12.86% |
-| 10Y / GBP5Y | 24.20% | 15.11% | 13.93% | 9.64% | 8.09% | 5.32% |
-| 10Y / EUR2Y | 21.23% | 9.56% | 22.23% | 17.17% | 22.42% | 18.85% |
-| 10Y / EUR5Y | 10.48% | -1.06% | 20.52% | 15.06% | 8.84% | 6.05% |
-| 30Y / GBP2Y | 18.09% | 0.02% | 41.45% | 32.22% | 78.19% | 68.42% |
-| 30Y / GBP5Y | -5.68% | -21.00% | 44.96% | 32.22% | 38.49% | 28.52% |
-| 30Y / EUR2Y | 18.64% | -1.14% | 62.54% | 50.83% | 62.42% | 52.17% |
-| 30Y / EUR5Y | -13.01% | -27.31% | 44.54% | 33.98% | 49.42% | 41.06% |
+| 10Y / GBP2Y | 4.52% | 2.78% | 2.33% | 0.98% | 5.80% | 4.89% |
+| 10Y / GBP5Y | 4.90% | 3.16% | 3.76% | 2.64% | 3.12% | 2.07% |
+| 10Y / EUR2Y | 4.34% | 2.04% | 5.85% | 4.59% | 8.31% | 7.06% |
+| 10Y / EUR5Y | 2.22% | -0.24% | 5.43% | 4.05% | 3.40% | 2.35% |
+| 30Y / GBP2Y | 3.74% | 0.00% | 10.32% | 8.23% | 25.62% | 22.86% |
+| 30Y / GBP5Y | -1.28% | -5.07% | 11.09% | 8.23% | 13.72% | 10.41% |
+| 30Y / EUR2Y | 3.85% | -0.25% | 14.74% | 12.34% | 21.11% | 18.03% |
+| 30Y / EUR5Y | -3.03% | -6.80% | 10.99% | 8.64% | 17.18% | 14.55% |
 
 The cost-adjusted version charges 0.5 bp for a completed round trip and funds a 1% Treasury repo haircut at SOFR + 5 bp. Baseline carry already includes Treasury funding at SOFR, so the haircut calculation adds the incremental funding cost. Swap margin costs are assessed separately.
 
