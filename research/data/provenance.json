@@ -1,0 +1,36 @@
+{
+  "source_rows": 1353,
+  "first": "2021-02-19",
+  "last": "2026-09-03",
+  "missing": {
+    "Spread": 0,
+    "MOVE": 0,
+    "GBP2Y": 2,
+    "GBP5Y": 1,
+    "EUR2Y": 2,
+    "EUR5Y": 3
+  },
+  "source_sha256": "3fbaf2dc58df8759c621d3cb95004801e59454ecdc9051006fb69c9227b78446",
+  "baseline_sha256": "9d5e6ff9c49b5c5da98991ebce9779868507c5fbefb7c48f096e5468278135ae",
+  "included_observations_equal_source": true,
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0",
+    "arch": "8.0.0"
+  },
+  "source_workbook": "US_Daily_Raw_Final_Models_With Libor.xlsx",
+  "source_sheet": "SOFR",
+  "source_columns": {
+    "Date": "A",
+    "Spread": "B",
+    "MOVE": "D",
+    "GBP2Y": "F",
+    "GBP5Y": "G",
+    "EUR2Y": "I",
+    "EUR5Y": "J"
+  },
+  "snapshot_sha256": "236b00507eacb86872fc2ac24b778d69bd0217a961b45efb5af3b80aeb3506b3",
+  "snapshot_description": "Observed values extracted from the supplied workbook; not simulated; blank basis entries retained."
+}

@@ -1,0 +1,1 @@
+A rolling-regression strategy for US SOFR swap spreads, rebuilt from raw data through carry, rolldown, trading costs and monthly returns.

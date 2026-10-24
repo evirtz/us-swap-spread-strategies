@@ -1,25 +1,13 @@
-# Local workbook inputs and generated reruns
-data/*
-!data/README.md
-results/generated/
-scripts/gross_returns_python/
-*.xlsx
-*.xls
-*.xlsm
-*.xlsb
-~$*
-
-# Python environments and caches
 .venv/
-venv/
+.venv-statistics/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-
-# Machine-specific files
-.env
-.env.*
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
+~$*
+.env
+.env.*
+!.env.example
+results/generated/
+research/results/

@@ -1,0 +1,119 @@
+{
+  "ReviewedDate": "2026-10-24",
+  "Backtest": {
+    "Status": "PASS",
+    "RollingModels": 24,
+    "RegressionSamples": 72,
+    "TradesChecked": 323,
+    "MissingPredictorCasesChecked": 6,
+    "MaximumIndependentCarryDifferenceBp": 7.815970093361102e-14,
+    "Cases": {
+      "gross": {
+        "Accounts": 96,
+        "MonthlyRows": 5376,
+        "NumericMonthlyReturns": 3937,
+        "DailyCapitalRows": 77278,
+        "CapitalTrades": 1184,
+        "ReferenceFieldsChecked": 90336,
+        "MaximumReferenceReturnError": 0.0,
+        "MaximumReferenceCapitalError": 0.0
+      },
+      "net": {
+        "Accounts": 96,
+        "MonthlyRows": 5376,
+        "NumericMonthlyReturns": 3937,
+        "DailyCapitalRows": 77278,
+        "CapitalTrades": 1184,
+        "ReferenceFieldsChecked": 101184,
+        "MaximumReferenceReturnError": 0.0,
+        "MaximumReferenceCapitalError": 0.0
+      }
+    },
+    "CalculationUsedOnlyRawWorkbooks": true,
+    "SavedResultsUsedForVerificationOnly": true
+  },
+  "UnitTests": {
+    "Passed": 6
+  },
+  "StatisticalGroupsRerun": [
+    "integration",
+    "regressions",
+    "johansen"
+  ],
+  "StatisticalComparisons": [
+    {
+      "result": "integration",
+      "matched": true,
+      "differences": [],
+      "rows": 366
+    },
+    {
+      "result": "cointegration",
+      "matched": true,
+      "differences": [],
+      "rows": 192
+    },
+    {
+      "result": "regression_models",
+      "matched": true,
+      "differences": [],
+      "rows": 24
+    },
+    {
+      "result": "regression_coefficients",
+      "matched": true,
+      "differences": [],
+      "rows": 72
+    },
+    {
+      "result": "johansen_models",
+      "matched": true,
+      "differences": [],
+      "rows": 176
+    },
+    {
+      "result": "johansen_statistics",
+      "matched": true,
+      "differences": [],
+      "rows": 880
+    }
+  ],
+  "UnchangedStatisticalFunctions": [
+    "jsonable",
+    "save",
+    "sample",
+    "integration",
+    "hac",
+    "rolling",
+    "adjustment",
+    "fm_scores",
+    "break_matrices",
+    "sup_stats",
+    "simulate_beta_critical",
+    "stability",
+    "prospective",
+    "bounds_sensitivity",
+    "corrected_bounds",
+    "dols_frame",
+    "endpoint_dols",
+    "rank_at",
+    "p_bracket",
+    "johansen",
+    "stability_reporting_units",
+    "regression_snapshots",
+    "currency_corrections",
+    "compare_value"
+  ],
+  "GitHubUploadPerformed": false,
+  "InputVerification": {
+    "WorkbookHashesMatch": true,
+    "StatisticalSnapshotMatchesRawLevels": true,
+    "StatisticalObservations": 1353,
+    "NamedColumnResearchReaderChecked": true
+  },
+  "GuardsChecked": [
+    "Optimized backtest rejected",
+    "Optimized verifier rejected",
+    "Missing statistical reference rejected before calculations"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "python_version": "3.12.14",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "statsmodels": "0.15.0",
+    "arch": "8.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "statistical_groups_validated": [
+    "integration",
+    "regressions",
+    "rolling",
+    "adjustment",
+    "stability",
+    "endpoints",
+    "prospective",
+    "johansen"
+  ],
+  "comparison_files": 20,
+  "record_count": 13045,
+  "comparison_results": [
+    {
+      "result": "bounds",
+      "matched": true,
+      "records": 16
+    },
+    {
+      "result": "bounds_fixed_lags",
+      "matched": true,
+      "records": 16
+    },
+    {
+      "result": "bounds_sensitivity",
+      "matched": true,
+      "records": 16
+    },
+    {
+      "result": "cointegration",
+      "matched": true,
+      "records": 192
+    },
+    {
+      "result": "currency_corrections",
+      "matched": true,
+      "records": 72
+    },
+    {
+      "result": "ecm_adjustment",
+      "matched": true,
+      "records": 48
+    },
+    {
+      "result": "endpoint_dols_stability",
+      "matched": true,
+      "records": 36
+    },
+    {
+      "result": "gregory_hansen",
+      "matched": true,
+      "records": 16
+    },
+    {
+      "result": "integration",
+      "matched": true,
+      "records": 366
+    },
+    {
+      "result": "johansen_models",
+      "matched": true,
+      "records": 176
+    },
+    {
+      "result": "johansen_statistics",
+      "matched": true,
+      "records": 880
+    },
+    {
+      "result": "long_run_estimators",
+      "matched": true,
+      "records": 128
+    },
+    {
+      "result": "prospective",
+      "matched": true,
+      "records": 576
+    },
+    {
+      "result": "refit_crossings",
+      "matched": true,
+      "records": 12
+    },
+    {
+      "result": "regression_coefficients",
+      "matched": true,
+      "records": 72
+    },
+    {
+      "result": "regression_models",
+      "matched": true,
+      "records": 24
+    },
+    {
+      "result": "rolling",
+      "matched": true,
+      "records": 10371
+    },
+    {
+      "result": "rolling_checks",
+      "matched": true,
+      "records": null
+    },
+    {
+      "result": "rolling_summary",
+      "matched": true,
+      "records": 12
+    },
+    {
+      "result": "stability",
+      "matched": true,
+      "records": 16
+    }
+  ],
+  "original_functions_preserved": [
+    "sample",
+    "integration",
+    "hac",
+    "rolling",
+    "adjustment",
+    "fm_scores",
+    "break_matrices",
+    "sup_stats",
+    "simulate_beta_critical",
+    "stability",
+    "prospective",
+    "bounds_sensitivity",
+    "corrected_bounds",
+    "dols_frame",
+    "endpoint_dols"
+  ],
+  "input_rows": 1353,
+  "original_workbook_input_verified": true,
+  "workbook_sha256": "791bb085c3b40b8519a91eb6e8517624094eaa39ba0025fec788fefd8279e648",
+  "code_sha256": "11d4a6e1f6c800492d0775ad085d85006d38c539c6b0d27c7f4c4a1b153f302e",
+  "validation_note": "All groups were rerun across staged validation runs. The original report unit conversion for FMOLS betas was included before final comparisons."
+}

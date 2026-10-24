@@ -1,0 +1,16 @@
+{
+  "workbooks": [
+    {
+      "path": "data/raw/US_Daily_Raw_Final_Models_With Libor.xlsx",
+      "sha256": "791bb085c3b40b8519a91eb6e8517624094eaa39ba0025fec788fefd8279e648",
+      "bytes": 315144,
+      "sheet_used": "SOFR"
+    },
+    {
+      "path": "data/raw/Rates_Swaps_Daily - With Libor.xlsx",
+      "sha256": "a48bca97f41f87ab223b63d9f73e74f7537289f4aa44e807bd0edbc39f69f846",
+      "bytes": 1046899,
+      "sheet_used": "SOFR"
+    }
+  ]
+}

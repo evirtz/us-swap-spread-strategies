@@ -1,0 +1,1154 @@
+[
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.9586040879243976,
+    "se": 0.08441078708924085,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.9616427143230758,
+    "se": 0.08424232180762356,
+    "n": 1346
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.9668399297433827,
+    "se": 0.08355934233772913,
+    "n": 1340
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.9809034621708602,
+    "se": 0.10172728770434324,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.2956654126797673,
+    "se": 0.07381807129838343,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.3087784738508677,
+    "se": 0.07333270051030139,
+    "n": 1346
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.3184375452306065,
+    "se": 0.07188734144906629,
+    "n": 1340
+  },
+  {
+    "period": "Full",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.3364207282416627,
+    "se": 0.08075934902108944,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.8437060748180882,
+    "se": 0.07730549713415143,
+    "n": 1352
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.8467801442239726,
+    "se": 0.07667385581198517,
+    "n": 1347
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.8519580747258975,
+    "se": 0.07520754108607594,
+    "n": 1341
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.8593797776337413,
+    "se": 0.10887985618442922,
+    "n": 1352
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.3201419822686584,
+    "se": 0.07544073150195085,
+    "n": 1352
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.3454733063654654,
+    "se": 0.07488677052061858,
+    "n": 1347
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.364321331051103,
+    "se": 0.07275933451939792,
+    "n": 1341
+  },
+  {
+    "period": "Full",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.3880997591548612,
+    "se": 0.0843991722753539,
+    "n": 1352
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.758789530924865,
+    "se": 0.06358753310709506,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.7620446486335638,
+    "se": 0.06340565260515335,
+    "n": 1346
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.7663206101487439,
+    "se": 0.06266005389165263,
+    "n": 1340
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.7768586991237305,
+    "se": 0.08439912635197684,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.0674806916954287,
+    "se": 0.05677876185284303,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.080105743137239,
+    "se": 0.05703631800961292,
+    "n": 1346
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.08847689532915,
+    "se": 0.056225128571457846,
+    "n": 1340
+  },
+  {
+    "period": "Full",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.1017554320992538,
+    "se": 0.0646987426667593,
+    "n": 1351
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.825772536009486,
+    "se": 0.06362226816271384,
+    "n": 1350
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.8284105113308045,
+    "se": 0.06365411917119228,
+    "n": 1345
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.8312475839843279,
+    "se": 0.06331861597298795,
+    "n": 1339
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.8427695446731085,
+    "se": 0.09147023123683022,
+    "n": 1350
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.0953592702106019,
+    "se": 0.06653667005835066,
+    "n": 1350
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.1077780633059544,
+    "se": 0.06793733124499515,
+    "n": 1345
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.1152622603497722,
+    "se": 0.06849470047744737,
+    "n": 1339
+  },
+  {
+    "period": "Full",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.1248296761009753,
+    "se": 0.07620475111705778,
+    "n": 1350
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 0.7954845211279621,
+    "se": 0.29123338591414955,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 0.7914283007673255,
+    "se": 0.2846194160699191,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 0.7864846788895128,
+    "se": 0.2929991682393399,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.766860794782231,
+    "se": 0.3614674732541982,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.2474176540017888,
+    "se": 0.24365263964347084,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.21335427447181887,
+    "se": 0.2509939133273434,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 0.14341130257508625,
+    "se": 0.23160920636049726,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.08756110996275585,
+    "se": 0.3781208418153472,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 1.4443902869038512,
+    "se": 0.34904932621929097,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 1.4264356603578976,
+    "se": 0.34749024598687595,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 1.4238886141988787,
+    "se": 0.3732634542296306,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 1.510724448464324,
+    "se": 0.4157229176015476,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.9059400651564651,
+    "se": 0.4078559333962778,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.8321001961209635,
+    "se": 0.44229540962715574,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 0.6654189273641795,
+    "se": 0.4043316659130829,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.7879242360435207,
+    "se": 0.5392689759673601,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 1.919617643649275,
+    "se": 0.43760613665334197,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 1.9363576051121356,
+    "se": 0.4273116518038895,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 2.0241943256102757,
+    "se": 0.4098215100086016,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 2.1912369516979657,
+    "se": 0.37306849802676934,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 1.9986284116238668,
+    "se": 0.6915370913278949,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 2.3401055198570027,
+    "se": 0.8300016370244864,
+    "n": 240
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 2.614962915309449,
+    "se": 0.8896747342196938,
+    "n": 234
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 2.414301334090229,
+    "se": 0.6366599287049123,
+    "n": 245
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 2.1765403080226666,
+    "se": 0.48131611723447093,
+    "n": 244
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 2.254730747667976,
+    "se": 0.48495766522146694,
+    "n": 239
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 2.366935988842351,
+    "se": 0.4597213653281876,
+    "n": 233
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 2.589528048678933,
+    "se": 0.3547207675629922,
+    "n": 244
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 2.1696789083036423,
+    "se": 0.6781662674544573,
+    "n": 244
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 2.365951397681933,
+    "se": 0.7336269800810186,
+    "n": 239
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 2.496922268523371,
+    "se": 0.6895067691611038,
+    "n": 233
+  },
+  {
+    "period": "R1 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 2.6509159386313375,
+    "se": 0.5213653600965532,
+    "n": 244
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 1.068419198534203,
+    "se": 0.24427726286706067,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 1.0913760280463778,
+    "se": 0.2480283265861363,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 1.0981375258560426,
+    "se": 0.25199573770279393,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 1.0393029715822673,
+    "se": 0.3888082263517905,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.33072658689123885,
+    "se": 0.3375776117350253,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.314517616613646,
+    "se": 0.3710030532836055,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 0.3221240206454061,
+    "se": 0.4008229904183659,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.2254987891436414,
+    "se": 0.5149933743626008,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 1.1439802088561977,
+    "se": 0.28724603298878504,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 1.1970254221685042,
+    "se": 0.29922666927024594,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 1.2311849945204187,
+    "se": 0.30994045030734607,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 1.1386768397249298,
+    "se": 0.32964224040390283,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.6833284041809228,
+    "se": 0.4218779369305723,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.7252218999900198,
+    "se": 0.4918823729895903,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 0.8030123730817164,
+    "se": 0.5512849981951486,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.624661166710652,
+    "se": 0.5363399454008319,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 1.391976747278894,
+    "se": 0.4659896928649882,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 1.5314714121601845,
+    "se": 0.5130783727654001,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 1.6861063012001627,
+    "se": 0.560327068003025,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 1.631747855703837,
+    "se": 0.43705767195955425,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.8117627211093104,
+    "se": 0.4676290349733412,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.9250323234589312,
+    "se": 0.5224002472456725,
+    "n": 484
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 1.112485657278745,
+    "se": 0.570283835424705,
+    "n": 478
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.9587841762064656,
+    "se": 0.4641040049928069,
+    "n": 489
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": 0.7450664567130003,
+    "se": 0.33489099079492957,
+    "n": 488
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": 0.8197462156970875,
+    "se": 0.37486328762452786,
+    "n": 483
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": 0.8958862277637111,
+    "se": 0.4203884281548136,
+    "n": 477
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.8527815676632098,
+    "se": 0.36328642560856256,
+    "n": 488
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": 0.41892530322709276,
+    "se": 0.3278451086479726,
+    "n": 488
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": 0.5043690885807602,
+    "se": 0.36062896452010956,
+    "n": 483
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": 0.6372895220219429,
+    "se": 0.3983825647025703,
+    "n": 477
+  },
+  {
+    "period": "R2 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": 0.5318461536046066,
+    "se": 0.3028285483839332,
+    "n": 488
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.6584791591358963,
+    "se": 0.17989730222594286,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.6553765035194866,
+    "se": 0.18486432185837273,
+    "n": 728
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.6624754548403742,
+    "se": 0.18873849545740246,
+    "n": 722
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.7151996273604526,
+    "se": 0.19450174977948376,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.3256934385137265,
+    "se": 0.15123936349421127,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.3876466027522614,
+    "se": 0.16454794893571265,
+    "n": 728
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.4450360356199632,
+    "se": 0.1716178869491509,
+    "n": 722
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.4833962986700369,
+    "se": 0.23678437526395177,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.5182197210166938,
+    "se": 0.11762429360830787,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.516034968480618,
+    "se": 0.11994806954667822,
+    "n": 729
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.521515029256423,
+    "se": 0.1222479543268759,
+    "n": 723
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.5544519129904477,
+    "se": 0.14795790282917354,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -1.0733794344915062,
+    "se": 0.11506788587334045,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -1.1251105284292522,
+    "se": 0.12781300764137798,
+    "n": 729
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -1.1777107322585374,
+    "se": 0.13760971411521897,
+    "n": 723
+  },
+  {
+    "period": "R3 final",
+    "family": "GBP5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -1.208352877628202,
+    "se": 0.17432794358643947,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.5910846280135993,
+    "se": 0.09661945682821366,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.5889792510674662,
+    "se": 0.1025121771372209,
+    "n": 729
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.5940784880930837,
+    "se": 0.10871499362028504,
+    "n": 723
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.6097542308514482,
+    "se": 0.14716613311013446,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -0.9561083754883094,
+    "se": 0.09145817345814994,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -0.9781518614456525,
+    "se": 0.09996368959048084,
+    "n": 729
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -0.9967701247145734,
+    "se": 0.10943972690052965,
+    "n": 723
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR2Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.9845452549602928,
+    "se": 0.16467941277487752,
+    "n": 734
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "OLS HAC20",
+    "beta": -0.5272484230048854,
+    "se": 0.08215530929909422,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS2 HAC20",
+    "beta": -0.5252420835413204,
+    "se": 0.08496049054346697,
+    "n": 728
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "DOLS5 HAC20",
+    "beta": -0.5279219404944262,
+    "se": 0.08838322870381361,
+    "n": 722
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "pair",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.5442612897043194,
+    "se": 0.12812417970384077,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "OLS HAC20",
+    "beta": -0.8001689222678966,
+    "se": 0.09970396193288567,
+    "n": 733
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS2 HAC20",
+    "beta": -0.8090323283895154,
+    "se": 0.10542688988264019,
+    "n": 728
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "DOLS5 HAC20",
+    "beta": -0.8080248101464355,
+    "se": 0.11110954040231559,
+    "n": 722
+  },
+  {
+    "period": "R3 final",
+    "family": "EUR5Y",
+    "spec": "with MOVE",
+    "method": "FMOLS auto Bartlett",
+    "beta": -0.8053415705874075,
+    "se": 0.14193801035719963,
+    "n": 733
+  }
+]

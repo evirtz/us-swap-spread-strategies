@@ -1,12 +1,12 @@
-# US Swap Spread Strategy
+# SOFR Swap Spread Strategy
 
-This project tests a trading rule for US Treasury-swap spreads. A rolling regression on cross-currency basis swaps and the MOVE index provides a fitted spread, and the strategy trades large deviations from that fitted value.
+This project tests whether cross-currency basis and interest-rate volatility can help identify trading opportunities in US swap spreads. A rolling regression provides a reference spread. The strategy takes a position when the observed spread moves far enough from that reference and exits when the deviation crosses zero.
 
-The analysis separates changes in the original swap spread from estimated carry and rolldown. It then asks how the returns change when trading costs, repo funding and leverage are included.
+The backtest starts with two raw Excel workbooks and rebuilds the regressions, trades, market P&L, carry, rolldown and monthly returns. It reports gross returns and returns after bid/offer and repo-haircut funding costs. Swap-margin funding and constraints are outside this version.
 
-## Scope
+## The study
 
-The results here cover 10-year and 30-year SOFR swap spreads, with GBP and EUR basis at the 2-year and 5-year tenors. Each specification uses three rolling regression windows:
+The traded spreads are the 10-year and 30-year SOFR series. Each is paired with GBP or EUR basis at the 2-year or 5-year tenor, with MOVE included in every regression.
 
 | Window | Training history | First eligible signal |
 | --- | --- | --- |
@@ -14,19 +14,23 @@ The results here cover 10-year and 30-year SOFR swap spreads, with GBP and EUR b
 | R2 | Previous two calendar years | 21 February 2023 |
 | R3 | Previous three calendar years | 21 February 2024 |
 
-All three periods end on 3 September 2026. The eight spread/basis combinations give 24 rolling models. Applying 1x, 10x, 20x and 30x leverage gives 96 separate account paths for each cost assumption.
+All periods end on 3 September 2026. There are 24 rolling strategies. Each has its own account at 1x, 10x, 20x and 30x leverage, giving 96 accounts for each cost assumption. These are overlapping strategies, not independent holdings in a combined portfolio.
 
-The wider study also covered LIBOR spreads, 1-year basis inputs, swap margin constraints and regression inference with HAC standard errors. The [methodology](docs/methodology.md) explains where those fit into the analysis.
+## How a trade works
 
-## Trading rule
+At each close, fit the regression to earlier complete observations in the relevant calendar window. The signal is the current residual divided by the training regression's residual standard error, using N minus 3 degrees of freedom.
 
-At each close, estimate the regression using earlier complete observations. Divide the current residual by the training regression's residual standard error. Go long the spread at -1 or below and short at +1 or above. Exit when the current rolling deviation crosses zero. Orders execute at the next recorded close.
+- Enter a long spread when the signal is -1 or below, and a short spread when it is +1 or above.
+- Exit a long when the signal reaches zero or higher, and a short when it reaches zero or lower.
+- Execute orders at the next recorded spread close. Keep one position per strategy.
 
-A long spread holds a Treasury and pays fixed on a swap, with equal entry DV01 on the two legs. Basis and MOVE are signal inputs. Positions are sized at entry and held at that size until exit. The next trade is sized from the remaining account capital.
+A long spread holds a Treasury and pays fixed on a swap, with equal entry DV01 on the two legs. Basis and MOVE are predictors; neither is traded. Treasury notional at entry equals leverage times account capital. Position size stays fixed during the trade, and the next trade uses the updated capital.
+
+The cost-adjusted case charges 0.5 bp for a completed round trip and funds a 1% Treasury repo haircut at SOFR plus 5 bp. Carry already includes Treasury funding at SOFR, so the haircut charge adds only the incremental cost. The [methodology](docs/methodology.md) explains the pricing and return conventions.
 
 ## Results
 
-The table shows **annualized returns (CAGR) at 10x leverage**. Each R column uses its own evaluation period above. CAGR is calculated as `(final capital / initial capital)^(365.25 / elapsed calendar days) - 1`.
+The table shows annualized returns at **10x leverage**, calculated from account capital over each R period. R1, R2 and R3 cover different evaluation periods.
 
 | Spread and basis | R1 gross | R1 after costs | R2 gross | R2 after costs | R3 gross | R3 after costs |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -39,35 +43,44 @@ The table shows **annualized returns (CAGR) at 10x leverage**. Each R column use
 | 30Y / EUR2Y | 3.85% | -0.25% | 14.74% | 12.34% | 21.11% | 18.03% |
 | 30Y / EUR5Y | -3.03% | -6.80% | 10.99% | 8.64% | 17.18% | 14.55% |
 
-The cost-adjusted version charges 0.5 bp for a completed round trip and funds a 1% Treasury repo haircut at SOFR + 5 bp. Baseline carry already includes Treasury funding at SOFR, so the haircut calculation adds the incremental funding cost. Swap margin costs are assessed separately.
+At higher leverage, some accounts lose their capital before the sample ends: two at 20x and four at 30x in both cases. All six are 30-year R1 accounts. The calculation retains the loss at the stopping close and leaves later returns unavailable.
 
-Leverage increases losses as well as gains. In both versions, two 20x accounts and four 30x accounts exhaust their capital. All six are 30-year R1 models. The files retain the actual loss at the stopping close and leave subsequent returns unavailable.
+The [gross](results/gross/) and [cost-adjusted](results/net/) folders contain every account, monthly return and calendar-year return. Returns are decimals, so `0.02` means 2%. The [results guide](docs/results.md) explains the other fields.
 
-The [results notes](docs/results.md) explain the units and stopping rules. The [gross](results/gross/) and [cost-adjusted](results/net/) folders contain all leverage levels, monthly returns, calendar-year returns and verification reports.
+## Run the backtest
 
-## Reproducing the gross returns
+Use Python 3.12. From the repository root:
 
-The Python script starts from the existing trade and daily P&L records in **Swap_Spread_Rolling_Results.xlsx**. It rebuilds the capital paths, monthly returns and calendar-year returns. Its verification option compares them with the gross results workbook.
-
-~~~bash
+```bash
 python -m pip install -r requirements.txt
-python scripts/reproduce_sofr_gross_returns.py --source "data/Swap_Spread_Rolling_Results.xlsx" --reference "data/SOFR_Gross_Monthly_Cumulative_Calendar_1x_10x_20x_30x.xlsx" --output-dir "results/generated" --verify
-~~~
+python scripts/run_backtest.py
+python scripts/verify_backtest.py --output-dir results/generated --reference-results results
+```
 
-The input workbooks stay in the local **data/** folder. See [data and reproduction](docs/data.md) for the required files and columns. The script covers the gross return calculation. The regression fitting, carry estimation and cost-adjusted simulation are documented here but are not rerun by that script.
+Input and funding checks can also be run with `python scripts/verify_inputs.py` and `python -m unittest discover -s tests -v`.
 
-The recorded Excel comparison passed for all 96 accounts, with no mismatched monthly, cumulative or calendar-year return cells. The largest return difference was 8.44e-15 in decimal units. This checks the reproduction against the workbook. It does not independently validate the upstream pricing assumptions.
+The two input workbooks are in `data/raw/`. The run writes a fresh set of calculations to `results/generated/`; rerunning replaces files there. Input workbooks and the saved results used for comparison are left unchanged.
 
-Run the verification tests from the repository root:
+The final command checks regression samples, trade timing, carry, capital and the saved return tables. The raw-data rebuild reproduced all 323 trades and both sets of monthly results within floating-point rounding. Reproduction confirms that the code recovers this backtest; it does not establish that the trading assumptions hold in live markets.
 
-~~~bash
-python -m unittest discover -s tests -v
-~~~
+For different input locations, pass `--regression-data`, `--rates-data` and `--output-dir` to the backtest. This is a fixed historical study, with its model choices and dates set in the code. Using later observations requires reviewing those choices rather than only replacing the workbooks.
 
-The tests use temporary workbooks and do not require the analysis inputs. They check that swapped, missing or unexpected model labels fail verification in the monthly, cumulative and calendar-year tables.
+## What the evidence supports
 
-## Reading the backtest
+The results show that this particular trading rule produced positive returns for several specifications under the stated assumptions. The statistical tests give a less consistent picture of a stable relationship between spread and basis. Cointegration depends on the specification, and the rolling adjustment results are sensitive to multiple-comparison corrections.
 
-Each trading signal is out of sample relative to its rolling regression fit. The evaluation periods and model choices have already been explored, however, so the results are not an untouched final holdout. Selecting a preferred model after reviewing these tables can introduce selection bias.
+Each signal excludes its own observation from training, but the models and evaluation dates have already been explored. The backtest is not an untouched final test. Carry and rolldown are modeled estimates, and high leverage can make modest spread losses large relative to capital.
 
-These are modeled spread returns with estimated carry and rolldown. They do not establish cointegration or a stable equilibrium. The account paths overlap and should be assessed separately rather than added together as independent strategies.
+The [statistical findings](docs/statistical_findings.md) discuss those qualifications. The separate [research code](research/README.md) reproduces the 10-year statistical study and uses its own pinned library environment.
+
+## Files
+
+| Location | Contents |
+| --- | --- |
+| `data/` | Original workbooks, column descriptions and input hashes |
+| `scripts/` | Raw-data reader, signals, valuation, P&L, capital and verification |
+| `results/` | Saved strategy, trade, account and monthly results |
+| `research/` | Statistical tests, observation snapshot and historical comparisons |
+| `docs/` | Methodology, results notes and statistical interpretation |
+
+The [reproduction notes](docs/reproduction.md) record the checks and their limits.
