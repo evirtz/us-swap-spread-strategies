@@ -1,0 +1,110 @@
+{
+  "CaseSettings": {
+    "RoundtripBp": 0.5,
+    "EntryBp": 0.25,
+    "ExitBp": 0.25,
+    "Haircut": 0.01,
+    "FundingPremium": 0.0005,
+    "DayBasis": 360
+  },
+  "ReturnReconciliation": {
+    "IndependentAccounts": 96,
+    "IndependentMonths": 3937,
+    "MaximumCapitalError": 6.252776074688882e-13,
+    "MaximumMonthlyError": 4.884981308350689e-15,
+    "GrossVsNetFullPeriodAccounts": 90,
+    "AllSurvivingNetReturnsLowerThanGross": true,
+    "CostRanges": {
+      "1": {
+        "HaircutCostIndex": [
+          0.000932749744337621,
+          0.0018149599213024598
+        ],
+        "TradingCostIndex": [
+          0.22274704907842613,
+          1.8303024699730435
+        ]
+      },
+      "10": {
+        "HaircutCostIndex": [
+          0.009797302933416345,
+          0.019335763057717014
+        ],
+        "TradingCostIndex": [
+          2.346642911733076,
+          18.80277109462748
+        ]
+      },
+      "20": {
+        "HaircutCostIndex": [
+          0.005737601498863295,
+          0.04242991784421142
+        ],
+        "TradingCostIndex": [
+          4.159970098711658,
+          34.73030303976438
+        ]
+      },
+      "30": {
+        "HaircutCostIndex": [
+          0.006709220419239548,
+          0.07783585093018032
+        ],
+        "TradingCostIndex": [
+          6.206376963925054,
+          43.97256028410622
+        ]
+      }
+    }
+  },
+  "SavedWorkbookChecks": {
+    "SavedCellsChecked": 10080,
+    "Sheets": 9,
+    "OutputFamilySheets": 8,
+    "Accounts": 96,
+    "NativeCharts": 32,
+    "ChartSourceRangesAndGapsVerified": true,
+    "NativeLineColorsVerified": true,
+    "SourceFilesUnchanged": true,
+    "OutputBytes": 1101635
+  },
+  "InputSHA256": {
+    "Swap_Spread_Rolling_Results.xlsx": "d62095ae59fc853fe9f438830e070beef87ace151a408c8a6d72ace5bd7c8e33",
+    "SOFR_Monthly_Returns_By_Model.xlsx": "a293e6803b1bd172694dba007530302a56afc5455116812508805b961b621fc1",
+    "Rates_Swaps_Daily - With Libor.xlsx": "72718e8f6ce4ab3104e20b06e1aa65c5d41c0fbd3043db31e775aad4e8fae07d",
+    "SOFR_Gross_Monthly_Cumulative_Calendar_1x_10x_20x_30x.xlsx": "cede53514fef4310e75427a9c8adf4666fe54942b8d7a17e1fda8551dff6e804"
+  },
+  "PathHandling": "Input paths shortened to filenames. Recorded numerical checks are unchanged.",
+  "LaterInputReview": [
+    {
+      "Filename": "Rates_Swaps_Daily - With Libor.xlsx",
+      "RecordedSHA256": "72718e8f6ce4ab3104e20b06e1aa65c5d41c0fbd3043db31e775aad4e8fae07d",
+      "CurrentSHA256": "a48bca97f41f87ab223b63d9f73e74f7537289f4aa44e807bd0edbc39f69f846",
+      "SOFRNumericSeriesComparison": {
+        "PriorSOFRRows": 2019,
+        "CurrentSOFRRows": 2019,
+        "OriginalFieldsCompared": 20,
+        "NumericDifferences": 0,
+        "DifferencesByField": {},
+        "UsedFieldsCompared": [
+          "Floating",
+          "UST_3m",
+          "UST_7yrs",
+          "UST_10yrs",
+          "UST_20yrs",
+          "UST_30yrs",
+          "IRS_7yrs_SOFR",
+          "IRS_10yrs_SOFR",
+          "IRS_20yrs_SOFR",
+          "IRS_30yrs_SOFR"
+        ],
+        "UsedFieldDifferences": 0,
+        "Examples": [],
+        "AdditionalColumns": [
+          "UST_3m_10s"
+        ],
+        "AddedDates": 0
+      }
+    }
+  ]
+}
